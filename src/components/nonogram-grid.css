@@ -1,0 +1,74 @@
+.nonogram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.column-hints {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+.column-hint {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.grid-with-row-hints {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-row-with-hint {
+  display: flex;
+  align-items: center;
+}
+
+.row-hint {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40px;
+  margin-right: 5px;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.grid-cell.not-filled {
+  background-color: white;
+}
+
+.grid-cell.filled {
+  background-color: black;
+  color: white;
+}
+
+.grid-cell.cannot-fill {
+  background-color: lightgray;
+  color: black;
+}
+
+.hint {
+  font-size: 14px;
+  text-align: center;
+  margin: 2px 0;
+}
